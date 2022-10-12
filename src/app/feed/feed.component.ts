@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServerService } from '../server.service';
 
 @Component({
   selector: 'app-feed',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedComponent implements OnInit {
 
-  constructor(private myApi:ApiS ) {
+  constructor(private myApi:ServerService ) {
     this.fetchData()
    }
 
